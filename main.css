@@ -1,0 +1,338 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  font-size: -webkit-xxx-large;
+}
+p{
+  font-family: 'Raleway', sans-serif;
+  font-size: x-large;
+}
+.nav {
+  background-image: url("https://storage.googleapis.com/caura-west/static/header.jpg");
+  background-repeat: no-repeat;
+}
+.logo {
+  width: 145px;
+  height: 90px;
+  margin: 5px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3em;
+}
+.quote-contents {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.quote-1{
+  position: relative;
+  z-index: 0;
+  height: 25px;
+}
+.quote-2{
+  position: relative;
+  z-index: 0;
+  height: 25px;
+  }
+.chat-bot-quote {
+  width: 27%;
+  margin-top: .5em;
+  text-align: center;
+  /*position absolute was to help facilitate location of quotes 1 and 2*/
+  /*position: absolute;*/
+}
+/*use image as button instead of actual button element*/
+/*.chat-bot-button {
+  width: 270px;
+  height: 77px;
+  margin-left: -0.7em;
+}*/
+.chat-button {
+  width: 270px;
+  height: 68px;
+  margin-top: 1em;
+  background-image: url(https://storage.googleapis.com/caura-west/static/Button.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 35px;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.chat-container {
+  background-image: url(https://storage.googleapis.com/caura-west/static/middle_picture.jpg);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 20px;
+  margin-bottom: 1em;
+  background-repeat: no-repeat;
+  background-position-y: -155px;
+}
+.chat-area {
+  position: absolute;
+  height: 220px;
+  width: 513px;
+  padding-right: 5%;
+  padding-top: 2.6%;
+  padding-bottom: 3%;
+  z-index: 100;
+}
+.chat--orange {
+  color: #a35a20;
+  font-weight: bold;
+}
+.chat--standard {
+  color: #e6e6e6;
+  font-size: large;
+}
+.black-box {
+  height: 220px;
+  width: 634px;
+  /*padding-right: 6%;*/
+  padding-top: 2.6%;
+  padding-bottom: 3%;
+}
+.man-image {
+  position: absolute;
+  padding-top: 3%;
+  height: 250px;
+}
+.end-text {
+  display: flex;
+  justify-content: center;
+  font-weight: bolder;
+}
+@media all and (min-width: 450em){
+  .container{
+    width: 26%;
+    margin: 0 auto;
+  }
+    .chat-area{
+    padding-right: 1.8%;
+    width: 700px;
+    height: 283px;
+    padding-bottom: 4%;
+  }
+  .black-box{
+    height: 383px;
+    width: 900px;
+  }
+  .chat-container{
+    height: 16%;
+  }
+}
+@media all and (min-width: 319em) and (max-width: 449em){
+  .container{
+    width: 35%;
+    margin: 0 auto;
+  }
+  .chat-area{
+    padding-right: 4%;/*.5%*/
+    width: 700px;
+    height: 283px;
+    padding-bottom: 7%;
+  }
+  /*.black-box{
+    height: 300px;
+    width: 800px;
+  }*/
+  .black-box{
+    height: 400px;
+    width: 1000px;
+    padding-bottom: 11%;
+  }
+  .chat-container{
+    height: 29%;
+  }
+  .man-image{
+    /*display: none;*/
+    padding-top: 0;
+    height: 308px;
+  }
+}
+@media all and (min-width: 239em) and (max-width: 319em){
+  .container{
+    width: 53%;
+    margin: 0 auto;
+  }
+  /*.chat-area{
+    padding-right: 2%;
+  }*/
+  .chat-area{
+    padding-right: 6%;
+    padding-bottom: 5%;
+    padding-top: 2.6%;
+    /*height: 220px;
+    width: 513px;*/
+  }
+  .black-box{
+    height: 300px;
+    width: 800px;
+    padding-top: 2.6%;
+    padding-bottom: 3%;
+  }
+}
+@media all and (min-width: 160em) and (max-width: 238em){
+  .container{
+    width: 70%;
+    margin: 0 auto;
+  }
+  .chat-area{
+    padding-right: 3%;
+  }
+}
+@media all and (min-width: 121em) and (max-width: 159em){
+  .container{
+    width: 80%;
+    margin: 0 auto;
+  }
+  .chat-area{
+    padding-right: 4%;
+  }
+}
+@media screen and (max-width: 1853px){
+  .chat-bot-quote {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 1170px) {
+  .man-image {
+    display: none;
+  }
+  .end-text {
+    display: none;
+  }
+
+  /*Below end-text allows for two line end text until 618 media query. Swap display: none and below end-text.*/
+  /*.end-text {
+    padding: 20px;
+    text-align: center;
+  }*/
+  .chat-bot-quote {
+    width: 60%;
+  }
+  .chat-container{
+  /*justify-content: center;*/
+    background-position-y: -167px;
+  }
+  .black-box{
+    width: 600px;
+  }
+  .chat-area{
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 850px){
+  h1 {
+  padding: 0 5px;
+  text-align: center;
+  font-size: xx-large;
+}
+  .chat-bot-quote {
+    width: 80%;
+  }
+  .chat-container{
+    background-position-y: -175px;
+  }
+  .quote-1{
+    height: 20px;
+  }
+  .quote-2{
+    height: 20px;
+  }
+}
+
+@media screen and (max-width: 650px){
+  .chat-bot-quote {
+    width: 98%;
+  }
+  .chat-container{
+    background-position-y: -180px;
+  }
+  .quote-1{
+    height: 15px;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+  .quote-2{
+    height: 15px;
+    margin-right: 20px;
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 618px){
+/*  .end-text{
+    display: none;
+  }*/
+
+  /*allows for bottom text to be on two lines on medium screens*/
+  /*.end-text--paragraph{
+    font-size: large;
+  }*/
+}
+@media screen and (max-width: 475px){
+/*html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}*/
+
+/*comment in if not hidden before this point if you want bottom text hidden on mobile*/
+/*.end-text {
+    display: none;
+  }*/
+
+  /*allows for bottom text to be on two lines even on mobile*/
+  /*.end-text--paragraph{
+    font-size: medium;
+  }*/
+  .main {
+    margin-bottom: 1em;
+  }
+  .chat-bot-quote{
+    font-size: large;
+  }
+  .container {
+    overflow-x: hidden !important;
+  }
+  .chat-container {
+    background-image: none;
+    justify-content: center;
+  }
+  .chat-bot-quote {
+    width: 100%
+  }
+  .quote-1{
+    height: 15px;
+    margin-left: 20px;
+    margin-right: -11px;
+    margin-top: 10px;
+}
+  .quote-2{
+    height: 15px;
+    margin-right: 20px;
+    margin-left: -11px;
+    margin-top: 10px;
+  }
+  .black-box {
+    height: 45%;
+    width: 87%;
+  }
+  .chat-area{
+    height: 281px;
+    width: 250px;
+  }
+}
